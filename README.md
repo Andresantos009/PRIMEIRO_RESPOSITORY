@@ -13,48 +13,87 @@ Criei minha primeira pasta
 - 📚 Atualmente estudando lógica de programação, estruturas de dados e projetos divertidos em Python.
 
 ---
-
-## Joguinho para você brincar 🕹️
-
-Aqui vai um joguinho simples que eu criei para você testar no seu terminal! É um jogo de adivinhação de números. Bora jogar?
-
-```python
+import curses
 import random
 
-def jogo_adivinhacao():
-    print("🎉 Bem-vindo ao Jogo de Adivinhação do André! 🎉")
-    numero_secreto = random.randint(1, 20)
-    tentativas = 5
+def jogo_cobrinha():
+    # Inicializa a tela
+    tela = curses.initscr()
+    curses.curs_set(0)  # Oculta o cursor
+    altura, largura = tela.getmaxyx()
+    janela = curses.newwin(altura, largura, 0, 0)
+    janela.keypad(True)  # Habilita captura de teclas especiais (setas)
+    janela.timeout(100)  # Tempo de atualização da tela em ms
 
-    while tentativas > 0:
-        chute = int(input(f"Tente adivinhar o número entre 1 e 20 (Você tem {tentativas} tentativas): "))
-        if chute == numero_secreto:
-            print("🎉 Parabéns! Você acertou! 🎉")
-            break
-        elif chute < numero_secreto:
-            print("Dica: Tente um número maior.")
+    # Posição inicial da cobrinha (3 blocos)
+    cobrinha_x = largura // 4
+    cobrinha_y = altura // 2
+    cobrinha = [
+        [cobrinha_y, cobrinha_x],
+        [cobrinha_y, cobrinha_x - 1],
+        [cobrinha_y, cobrinha_x - 2]
+    ]
+
+    # Primeira comida
+    comida = [random.randint(1, altura - 2), random.randint(1, largura - 2)]
+    janela.addch(comida[0], comida[1], curses.ACS_PI)
+
+    key = curses.KEY_RIGHT  # Direção inicial
+    score = 0
+
+    while True:
+        prox_tecla = janela.getch()
+        key = key if prox_tecla == -1 else prox_tecla
+
+        # Calcula nova posição da cabeça da cobrinha
+        nova_cabeca = [cobrinha[0][0], cobrinha[0][1]]
+
+        if key == curses.KEY_DOWN:
+            nova_cabeca[0] += 1
+        elif key == curses.KEY_UP:
+            nova_cabeca[0] -= 1
+        elif key == curses.KEY_LEFT:
+            nova_cabeca[1] -= 1
+        elif key == curses.KEY_RIGHT:
+            nova_cabeca[1] += 1
+
+        # Insere a nova cabeça na lista da cobrinha
+        cobrinha.insert(0, nova_cabeca)
+
+        # Se a cobrinha comeu a comida
+        if cobrinha[0] == comida:
+            score += 1
+            comida = None
+            # Gera nova comida em posição aleatória que não esteja na cobrinha
+            while comida is None:
+                nova_comida = [
+                    random.randint(1, altura - 2),
+                    random.randint(1, largura - 2)
+                ]
+                if nova_comida not in cobrinha:
+                    comida = nova_comida
+            janela.addch(comida[0], comida[1], curses.ACS_PI)
         else:
-            print("Dica: Tente um número menor.")
-        tentativas -= 1
+            # Remove a cauda da cobrinha
+            cauda = cobrinha.pop()
+            janela.addch(cauda[0], cauda[1], ' ')
 
-    if tentativas == 0:
-        print(f"Fim de jogo! O número secreto era {numero_secreto}. Tente novamente!")
+        # Verifica colisão com paredes ou com o próprio corpo
+        if (cobrinha[0][0] in [0, altura] or
+            cobrinha[0][1] in [0, largura] or
+            cobrinha[0] in cobrinha[1:]):
+            curses.endwin()
+            print(f"Game Over! Sua pontuação foi: {score}")
+            break
+
+        # Desenha a cobrinha na tela
+        janela.addch(cobrinha[0][0], cobrinha[0][1], curses.ACS_CKBOARD)
 
 if __name__ == "__main__":
-    jogo_adivinhacao()
+    print("Joguinho da cobrinha iniciado! Use as setas para jogar.")
+    print("Pressione Ctrl+C para sair.")
+    jogo_cobrinha()
 
-from PIL import Image, ImageDraw, ImageFont
-import os
-
-# Texto para animar
-frames_text = [
-    "Keep Calm",
-    "and Code",
-    "Python!",
-    "Errors? Bugs?",
-    "Relax, it's part",
-    "of the game 🐍🔥"
-]
 
 # Configurações do GIF
 width, height = 400, 200
