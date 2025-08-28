@@ -1,4 +1,4 @@
-# PRIMEIRO_RESPOSITORY
+# PRIMEIRO_RESPOSITORIO
 Criei minha primeira pasta 
 # 👋 Eu sou o André Santos
 
