@@ -12,7 +12,7 @@ Criei minha primeira pasta
 - 📚 Atualmente estudando lógica de programação, estruturas de dados e projetos divertidos em Python.
 
 
--  💻 Desenvolvedor full-stack apaixonado por transformar ideias em soluções reais.
+
 -  🌱 Aprendendo sempre, compartilhando conhecimento e contribuindo com a comunidade open source.
 -  🧠 Curioso por natureza, movido por desafios e café ☕.
 
