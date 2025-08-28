@@ -68,7 +68,6 @@ Criei minha primeira pasta
 
 
 
-###############################
 
 
 ### Socials
