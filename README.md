@@ -12,6 +12,14 @@ Criei minha primeira pasta
 - 📚 Atualmente estudando lógica de programação, estruturas de dados e projetos divertidos em Python.
 
 
+-  💻 Desenvolvedor full-stack apaixonado por transformar ideias em soluções reais.
+-  🚀 Especialista em JavaScript, Node.js e React, com foco em performance e boas práticas.
+-  🌱 Aprendendo sempre, compartilhando conhecimento e contribuindo com a comunidade open source.
+-  🧠 Curioso por natureza, movido por desafios e café ☕.
+
+
+
+
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/sants_andre0)  
 
