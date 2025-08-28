@@ -1,6 +1,6 @@
 # PRIMEIRO_RESPOSITORY
 Criei minha primeira pasta 
-# Olá, mundo! 👋 Eu sou o André Santo
+# 👋 Eu sou o André Santo
 
 ![Python Logo](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
 
