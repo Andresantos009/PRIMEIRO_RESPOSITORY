@@ -17,6 +17,11 @@ Criei minha primeira pasta
 -  🌱 Aprendendo sempre, compartilhando conhecimento e contribuindo com a comunidade open source.
 -  🧠 Curioso por natureza, movido por desafios e café ☕.
 
+-   Participante do projeto "Athlete Vision"
+
+![KeepCoding GIF](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2w3ZWFrZmUwbG5nZGp1N215NmVzdXBjOHh2djZjcnk2a212cjEyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OWgDiFQbtizpdLewE5/giphy.gif)
+
+
 
 
 
@@ -61,7 +66,7 @@ Criei minha primeira pasta
 
 
 
-
+![GIF divertido](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2x6MXZ4cnB5aGJ2b21ucGpha3MzcGgwamduODNza2V3NG0xbXdkYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif)
 
 
 
