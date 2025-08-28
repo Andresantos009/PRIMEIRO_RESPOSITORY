@@ -13,7 +13,6 @@ Criei minha primeira pasta
 
 
 -  💻 Desenvolvedor full-stack apaixonado por transformar ideias em soluções reais.
--  🚀 Especialista em JavaScript, Node.js e React, com foco em performance e boas práticas.
 -  🌱 Aprendendo sempre, compartilhando conhecimento e contribuindo com a comunidade open source.
 -  🧠 Curioso por natureza, movido por desafios e café ☕.
 
