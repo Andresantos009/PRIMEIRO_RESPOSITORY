@@ -97,10 +97,9 @@ src="https://img.shields.io/github/followers/Andresantos009?logo=github&style=fo
 <a href="https://github.com/Andresantos009" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Andresantos009&langs_count=10&title_color=ffffff&text_color=14b8a6&icon_color=10b981&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages" alt="Top Languages" /></a>
 
 
-
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/sants_andre0)  
 
-
+telefone: 11 95580-2553
 
 
 
