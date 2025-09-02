@@ -34,7 +34,6 @@ https://app--athlete-vision-a564e023.base44.app/
 
 
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/sants_andre0)  
 
 
 ###
@@ -98,8 +97,6 @@ src="https://img.shields.io/github/followers/Andresantos009?logo=github&style=fo
 
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/sants_andre0)  
-
-telefone: 11 95580-2553
 
 
 
