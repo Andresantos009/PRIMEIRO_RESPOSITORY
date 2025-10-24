@@ -20,10 +20,6 @@ Criei minha primeira pasta
 
 
 
-https://app--athlete-vision-a564e023.base44.app/
-
-
-
 
 
 
